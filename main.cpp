@@ -24,7 +24,7 @@ int main()
 {
    // open the file to read
    fstream file;
-   file.open("numbers1.txt", ios::in);
+   file.open("input.txt", ios::in);
 
    // exit from the program if the input file does not exist
    if (file.fail())
@@ -74,7 +74,7 @@ int main()
    file.close();
 
    // open the file to write
-   file.open("numbers.txt", ios::out);
+   file.open("output.txt", ios::out);
 
    //write data to the file
    auto itr = lst.crbegin();
